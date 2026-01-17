@@ -14,6 +14,9 @@ public class Main {
 
         System.out.println("Duyệt Postorder:");
         bst.postOrder();
+        System.out.println("================");
+        System.out.println("Duyệt Preorder:");
+        bst.preorder(bst.root);
     }
 }
 

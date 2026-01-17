@@ -39,4 +39,13 @@ public class BinarySearchTree {
         }
     }
 
+    public void preorder(Node root) {
+        if (root == null) return;
+
+        System.out.print(root.data + " "); // Bước 1
+        preorder(root.left);               // Bước 2
+        preorder(root.right);              // Bước 3
+    }
+
+
 }
