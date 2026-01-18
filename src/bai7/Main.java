@@ -14,6 +14,11 @@ public class Main {
 
         System.out.println("Xoá node 70");
         bst.delete(70);
+
+        System.out.println("Tìm 60: " + bst.search( bst.root,60)); // true
+        System.out.println("Tìm 25: " + bst.search(bst.root,25)); // false
+        System.out.println("Tìm 80: " + bst.search(bst.root,80)); // true
+
     }
 }
 

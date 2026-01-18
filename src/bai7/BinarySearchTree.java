@@ -56,6 +56,22 @@ public class BinarySearchTree {
         }
         return min;
     }
+
+    boolean search(Node root, int value) {
+        Node current = root;
+
+        while (current != null) {
+            if (value == current.data) {
+                return true;
+            } else if (value < current.data) {
+                current = current.left;
+            } else {
+                current = current.right;
+            }
+        }
+        return false;
+    }
+
 }
 
 
